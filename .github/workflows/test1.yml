@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   moje_pierwsze_zadanie:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
