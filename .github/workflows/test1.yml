@@ -1,0 +1,23 @@
+name: pierwszy_przeplyw
+
+on: push
+
+permissions:
+  contents: read
+
+jobs:
+  moje_pierwsze_zadanie:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Pauza
+        run: |
+          echo "czekamy 10s"
+          sleep 10
+          echo "Idziemy dalej"
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
