@@ -10,7 +10,7 @@ jobs:
     runs-on: debian13_runner1
     steps:
       - name: Sprawdzamy wersję Python
-        run: python -V
+        run: python3 -V
       - name: Wyświetl aktualny katalog roboczy
         run: pwd
       - name: Wyświetl listę plików
@@ -23,4 +23,4 @@ jobs:
         with:
           python-version: '3.15.0-rc.3'
       - name: Sprawdzamy wersję Python po instalacji
-        run: python -V
+        run: python3 -V
