@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   moje_pierwsze_zadanie:
-    runs-on: ubuntu-latest
+    runs-on: debian13_runner1
     steps:
       - name: Sprawdzamy wersję Python
         run: python -V
