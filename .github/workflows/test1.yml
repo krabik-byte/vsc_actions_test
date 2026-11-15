@@ -14,8 +14,7 @@ jobs:
       - name: Wyświetl aktualny katalog roboczy
         run: pwd
       - name: Wyświetl listę plików
-        run: ls -a
+        run: ls -la
       - uses: actions/checkout@v4
       - name: Wyświetl listę plików po checkout
-        run: ls -a
-
+        run: ls -la
